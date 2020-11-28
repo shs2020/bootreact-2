@@ -38,5 +38,5 @@ jobs:
       - name: install surge
          run:npm install -g surge
      
-      - name:deploy
-       run:surge ./build boooters.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      - name: deploy
+        run: surge ./build boooters.surge.sh --token ${{secrets.SURGE_TOKEN}}
