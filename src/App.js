@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState} from 'react';
+import './color.css';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          reacter by me
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  
+ 
 
-export default App;
+
+  
+  var [islit,setstate]=useState(true);
+
+return(
+<div className={"rome "+(islit? "darke":"lite")}   >
+ <br></br>
+the light is {islit? "lit":"dark"}<br></br>
+<button onClick={()=>setstate(!islit)}>switch</button>
+</div>)
+
+} 
+
+export default App
